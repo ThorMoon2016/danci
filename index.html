@@ -47,10 +47,24 @@
     </nav>
 
     
-
-    <div style="position: relative;">
-        <img src="images/PUR.jpg" style="width: 100%; height: auto; display: block; position: absolute; z-index: -1; top: 0; left: 0;">
-    </div>
+    <style>
+        .text-animation {
+            text-align: center;
+            background-image: url('images/PUR.jpg');
+            background-size: cover;
+            background-position: center;
+            padding: 20px;
+            color: white;
+            line-height: 1.5; /* Visina linije za povećanje razmaka između redova */
+        }
+    
+        .text-animation p {
+            display: block; /* Svaki red teksta će biti blok element */
+            margin: 0 auto 10px; /* Uklanja margine kako bi se svaki red teksta točno slagao ispod prethodnog */
+            max-width: 600px; /* Ograničava širinu teksta ako je potrebno */
+            text-align: left; /* Poravnanje teksta ulijevo */
+        }
+    </style>
 
 
     <div class="text-animation" style="text-align: center;">
