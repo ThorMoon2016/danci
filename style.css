@@ -1439,7 +1439,7 @@ body {
 /* Dodajemo pomak prema dolje za H3 element na mobilnim uređajima */
 @media screen and (max-width: 768px) {
   .slick-slider .float .box h3 {
-    margin-top: 10px; /* Prilagodite ovu vrijednost prema vašim potrebama */
+    margin-top: 30px; /* Prilagodite ovu vrijednost prema vašim potrebama */
   }
 }
 
