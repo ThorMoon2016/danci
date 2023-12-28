@@ -1418,18 +1418,3 @@ body {
   }
   
 
-
-
-
-
-
-  body {
-    background-image: url('images/pngtree-line-white-background-business-picture-image_1326839.jpg');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed; /* Da se slika fiksira i ne pomiče s scroll-om */
-    /* Dodatni stilovi za pozadinu stranice */
-    margin: 0; /* Da se eliminira vanjski prostor oko stranice */
-    padding: 0; /* Da se eliminira unutarnji prostor oko stranice */
-    /* Dodatni stilovi prema potrebi */
-}
