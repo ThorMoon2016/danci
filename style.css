@@ -224,6 +224,16 @@ header {
     font-family: Arial, sans-serif;
 }
 
+
+.flowers .client-title-box h2 {
+    font-weight: bold;
+    background-image: linear-gradient(90deg, #f0c769 2%, #ffe28b 42%, #d0a651 71%, #ffecb2); /* Gradijentna boja teksta */
+    -webkit-background-clip: text; /* Kako bi se tekst ograničio na gradijent */
+    background-clip: text; /* Kako bi se tekst ograničio na gradijent */
+    color: transparent; /* Tekst postavljamo na transparent */
+    margin-top: 1px; /* Prilagodite vrijednost prema potrebi za pomakom prema gore */
+}
+
 .flower-container {
     display: flex;
     flex-wrap: wrap;
@@ -1283,7 +1293,19 @@ body {
     -webkit-background-clip: text; /* Kako bi se tekst ograničio na gradijent */
     background-clip: text; /* Kako bi se tekst ograničio na gradijent */
     color: transparent; /* Tekst postavljamo na transparent */
+    margin-top: 1px;
 }
+
+
+.client-title-box {
+    background-color: #6a006a; /* Ljubičasta boja pozadine */
+    padding: 10px; /* Unutarnji razmak */
+    border-radius: 10px; /* Zaobljeni rubovi */
+    display: inline-block; /* Da okvir bude samo oko teksta */
+    height: 30px;
+}
+
+
 
 
 
@@ -1418,3 +1440,9 @@ body {
   }
   
 
+
+
+
+
+
+ 
