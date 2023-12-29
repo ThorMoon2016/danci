@@ -1303,6 +1303,7 @@ body {
     border-radius: 10px; /* Zaobljeni rubovi */
     display: inline-block; /* Da okvir bude samo oko teksta */
     height: 30px;
+    margin-bottom: 20px;
 }
 
 
