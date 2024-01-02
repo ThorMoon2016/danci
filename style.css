@@ -84,7 +84,7 @@ header {
 @media (min-width: 768px) {
     .logo img {
         display: block; /* Postavite sliku da bude blok-element */
-        margin-left: 750px; /* Centriraj sliku horizontalno */
+        margin-left: 220px; /* Centriraj sliku horizontalno */
     }
 }
 
@@ -98,7 +98,7 @@ header {
 .menu-line {
     width: 25px;
     height: 3px;
-    background-color: #333; /* Boja linija */
+    background-color: #ffffff; /* Boja linija */
     margin: 3px 0;
 }
 
@@ -106,7 +106,7 @@ header {
 .menu {
     display: flex;
     align-items: center;
-    background-color: rgb(202, 167, 202);
+   
 }
 
 .menu ul {
@@ -119,14 +119,20 @@ header {
 }
 
 .menu li {
-    margin-right: 20px; /* Razmak između opcija menija */
+   margin-left: 30px;
 }
 
 .menu a {
     text-decoration: none;
-    color: #333; /* Boja teksta */
+   
     font-weight: bold;
     transition: color 0.3s ease; /* Animacija promjene boje teksta */
+    font-weight: bold;
+    background-image: linear-gradient(90deg, #f0c769 2%, #ffe28b 42%, #d0a651 71%, #ffecb2); /* Gradijentna boja teksta */
+    -webkit-background-clip: text; /* Kako bi se tekst ograničio na gradijent */
+    background-clip: text; /* Kako bi se tekst ograničio na gradijent */
+    color: transparent; /* Tekst postavljamo na transparent */
+    margin-top: 1px;
 }
 
 .menu a:hover {
@@ -1192,32 +1198,30 @@ input[type="checkbox"]:checked + label {
   
   .text-animation {
     text-align: center;
-    
-    background-size: cover;
+    background-image: url('putanja/do/slike.jpg');
+    background-size: 2000px 800px; /* Postavljanje širine na 2000 piksela i visine na 800 piksela */
     background-position: center;
     padding: 20px;
     font-weight: bold;
     color: transparent; /* Tekst postavljamo na transparent */
 }
 
+
+
 .text-animation p {
-    background-image: linear-gradient(90deg, #f0c769 2%, #ffe28b 42%, #d0a651 71%, #ffecb2); /* Zlatna gradijentna boja teksta */
+    font-weight: bold;
+    background-image: linear-gradient(90deg, #f0c769 2%, #ffe28b 42%, #d0a651 71%, #ffecb2); /* Gradijentna boja teksta */
     -webkit-background-clip: text; /* Kako bi se tekst ograničio na gradijent */
     background-clip: text; /* Kako bi se tekst ograničio na gradijent */
     color: transparent; /* Tekst postavljamo na transparent */
-    mix-blend-mode: multiply; /* Kombiniranje gradijenta s pozadinom */
+    margin-top: 1px;
 }
 
 
 
   
       
-          .text-animation p {
-              display: block; /* Svaki red teksta će biti blok element */
-              margin: 0 auto 10px; /* Uklanja margine kako bi se svaki red teksta točno slagao ispod prethodnog */
-              max-width: 600px; /* Ograničava širinu teksta ako je potrebno */
-              text-align: left; /* Poravnanje teksta ulijevo */
-          }
+          
   
 
 
@@ -1310,9 +1314,27 @@ body {
 
 
 
+.name-box {
+    display: inline-block;
+    padding: 5px;
+    background-color: #6a006a;
+    border-radius: 8px;
+
+}
+.name {
+    margin: 0; /* Remove default margin for the name */
+    font-weight: bold;
+}
 
 
-
+.name-box p {
+    font-weight: bold;
+    background-image: linear-gradient(90deg, #f0c769 2%, #ffe28b 42%, #d0a651 71%, #ffecb2); /* Gradijentna boja teksta */
+    -webkit-background-clip: text; /* Kako bi se tekst ograničio na gradijent */
+    background-clip: text; /* Kako bi se tekst ograničio na gradijent */
+    color: transparent; /* Tekst postavljamo na transparent */
+    margin-top: 1px;
+}
 
 
 
