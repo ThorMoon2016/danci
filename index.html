@@ -14,11 +14,58 @@
     <script src="index.js"></script>
 
 
-    
 
 </head>
+
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+    }
+
+    .header {
+       
+        position: relative;
+        z-index: 1;
+        background: url('images/poz2.jpg') no-repeat;
+        background-size: cover;
+    }
+
+    .text-animation {
+        min-height: 300px; /* Visina text-animation sekcije */
+        position: relative;
+        z-index: 1;
+    }
+
+    .full-background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 46%;
+        z-index: 0;
+        background: url('images/poz2.jpg') no-repeat;
+        background-size: cover;
+    }
+
+
+ /* Media query za mobilne uređaje (do širine od 768px) */
+ @media (max-width: 768px) {
+        .header {
+            height: 80px; /* Prilagođena visina headera za mobilne uređaje */
+        }
+
+        .full-background {
+            height: 107%; /* Prilagođena visina slike za mobilne uređaje */
+        }
+    }
+</style>
+
+
 <body>
-    <header>
+      <div class="full-background"></div>
+    <header class="header">
         <div class="logo">
             <a href="index.html"><img src="images/11.png" alt="Logo Cvijećara"></a>
         </div>
@@ -29,7 +76,7 @@
             <div class="menu-line"></div>
             <div class="menu-line"></div>
         </div>
-    </header>
+    
     <nav class="menu">
         <ul>
             <li><a href="index.html">HOME</a></li>
@@ -45,20 +92,29 @@
             <!-- Dodajte ostale opcije menija ovdje -->
         </ul>
     </nav>
+</header>
+
 
     
+
+
+<div class="text-animation" style="text-align: center; ">
+        <p><strong>Dobrodošli na našu stranicu!</strong> Uživajte u cvjetnim kreacijama cvjećara <strong>NERINA & NERINA 2</strong>!</p>
     
-
-
-    <div class="text-animation" style="text-align: center; ">
-    <p><strong>Dobrodošli na našu stranicu!</strong> Uživajte u cvjetnim kreacijama cvjećara <strong>NERINA & NERINA 2</strong>!</p>
-
-    <p>Tražite buket cvijeća ili cvijeće na poklon? Trebate cvjetnu dekoraciju kojom ćete ukrasiti Vaš dom, vrt ili poslovni prostor?</p>
-
-    <p>Naši buketi cvijeća i cvjetne dekoracije dostupni su Vam svakodnevno na dvije atraktivne lokacije u gradu, te mogu biti dostavljeni i na željenu adresu na području cijelog grada Sarajeva i okolice.</p>
-
-    <p>Za uvid u bogatu ponudu cvjećara <strong>NERINA</strong>, posjetite Galeriju naše web stranice.</p>
-</div>
+        <p>Tražite buket cvijeća ili cvijeće na poklon? Trebate cvjetnu dekoraciju kojom ćete ukrasiti Vaš dom, vrt ili poslovni prostor?</p>
+    
+        <p>Naši buketi cvijeća i cvjetne dekoracije dostupni su Vam svakodnevno na dvije atraktivne lokacije u gradu, te mogu biti dostavljeni i na željenu adresu na području cijelog grada Sarajeva i okolice.</p>
+    
+        <p>Za uvid u bogatu ponudu cvjećara <strong>NERINA</strong>, posjetite Galeriju naše web stranice.</p>
+        <p><strong>Dobrodošli na našu stranicu!</strong> Uživajte u cvjetnim kreacijama cvjećara <strong>NERINA & NERINA 2</strong>!</p>
+    
+        <p>Tražite buket cvijeća ili cvijeće na poklon? Trebate cvjetnu dekoraciju kojom ćete ukrasiti Vaš dom, vrt ili poslovni prostor?</p>
+    
+        <p>Naši buketi cvijeća i cvjetne dekoracije dostupni su Vam svakodnevno na dvije atraktivne lokacije u gradu, te mogu biti dostavljeni i na željenu adresu na području cijelog grada Sarajeva i okolice.</p>
+    
+        <p>Za uvid u bogatu ponudu cvjećara <strong>NERINA</strong>, posjetite Galeriju naše web stranice.</p>
+    </div>
+    
 
 
 
@@ -260,18 +316,23 @@
                         <img src="images/D4.jpeg" alt="Cvijet 1">
                         <div class="flower-details">
                             <p class="price">20KM <span class="discount-price">25KM</span></p>
-                            <p class="name">Cvijet 1</p>
+                            <div class="name-box">
+                                <p class="name">Cvijet 1</p>
+                            </div>
                         </div>
                     </div>
                 </a>
             </div>
+            
             <div class="flower-box">
                 <a href="cv2.html">
                 <div class="flower">
                     <img src="images/d5.jpg" alt="Cvijet 2">
                     <div class="flower-details">
                         <p class="price">25KM <span class="discount-price">30KM</span></p>
-                        <p class="name">Cvijet 2</p>
+                        <div class="name-box">
+                            <p class="name">Cvijet 1</p>
+                        </div>
                     </div>
                 </div>
             </a>
@@ -282,7 +343,9 @@
                     <img src="images/d6.jpg" alt="Cvijet 2">
                     <div class="flower-details">
                         <p class="price">30KM <span class="discount-price">40KM</span></p>
-                        <p class="name">Cvijet 2</p>
+                        <div class="name-box">
+                            <p class="name">Cvijet 1</p>
+                        </div>
                     </div>
                 </div>
             </a>
@@ -293,7 +356,9 @@
                     <img src="images/d2.jpg" alt="Cvijet 2">
                     <div class="flower-details">
                         <p class="price">35KM <span class="discount-price">50KM</span></p>
-                        <p class="name">Cvijet 2</p>
+                        <div class="name-box">
+                            <p class="name">Cvijet 1</p>
+                        </div>
                     </div>
                 </div>
             </a>
@@ -344,7 +409,9 @@
                         <img src="images/raf-removebg-preview.png" alt="Cvijet 1">
                         <div class="flower-details">
                             <p class="price">10KM <span class="discount-price">15KM</span></p>
-                            <p class="name">Raffaelo</p>
+                            <div class="name-box">
+                                <p class="name">RAFFAELO</p>
+                            </div>
                         </div>
                     </div>
                 </a>
@@ -355,7 +422,9 @@
                     <img src="images/ferr-removebg-preview.png" alt="Cvijet 2">
                     <div class="flower-details">
                         <p class="price">15KM <span class="discount-price">20KM</span></p>
-                        <p class="name">Ferrero Rocher</p>
+                        <div class="name-box">
+                            <p class="name">FERRERO ROCHER</p>
+                        </div>
                     </div>
                 </div>
             </a>
@@ -366,7 +435,9 @@
                     <img src="images/balon-removebg-preview.png" alt="Cvijet 2">
                     <div class="flower-details">
                         <p class="price">15KM <span class="discount-price">20KM</span></p>
-                        <p class="name">Baloni</p>
+                        <div class="name-box">
+                            <p class="name">BALONI</p>
+                        </div>
                     </div>
                 </div>
             </a>
@@ -377,7 +448,9 @@
                     <img src="images/bear.png" alt="Cvijet 4">
                     <div class="flower-details">
                         <p class="price">18KM <span class="discount-price">23KM</span></p>
-                        <p class="name">Plišani medvjed</p>
+                        <div class="name-box">
+                            <p class="name">PLIŠANI MEDVJED</p>
+                        </div>
                     </div>
                 </div>
             </a>
