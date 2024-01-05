@@ -28,7 +28,7 @@
        
         position: relative;
         z-index: 1;
-        background: url('images/poz2.jpg') no-repeat;
+        background: url('images/n12.png') no-repeat;
         background-size: cover;
     }
 
@@ -43,23 +43,26 @@
         top: 0;
         left: 0;
         width: 100%;
-        height: 46%;
+        height: 40%;
         z-index: 0;
-        background: url('images/poz2.jpg') no-repeat;
+        background: url('images/n12.png') no-repeat;
         background-size: cover;
     }
 
 
- /* Media query za mobilne uređaje (do širine od 768px) */
- @media (max-width: 768px) {
-        .header {
-            height: 80px; /* Prilagođena visina headera za mobilne uređaje */
-        }
-
-        .full-background {
-            height: 107%; /* Prilagođena visina slike za mobilne uređaje */
-        }
+/* Media upit za mobilne uređaje */
+@media only screen and (max-width: 768px) {
+    .header {
+        background: url('images/n13.png') no-repeat;
+        background-size: cover;
     }
+
+    .full-background {
+        background: url('images/n13.png') no-repeat;
+        background-size: cover;
+        height: 82%;
+    }
+}
 </style>
 
 
@@ -67,7 +70,7 @@
       <div class="full-background"></div>
     <header class="header">
         <div class="logo">
-            <a href="index.html"><img src="images/11.png" alt="Logo Cvijećara"></a>
+            
         </div>
       
         
