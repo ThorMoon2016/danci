@@ -77,14 +77,15 @@ header {
 
 /* Stil za logo */
 .logo img {
-    width: 220px; /* Prilagodite veličinu vašem logotipu */
+    width: 200px; /* Prilagodite veličinu vašem logotipu */
+    
 }
 
 /* Stil za logo samo na desktop verziji */
 @media (min-width: 768px) {
     .logo img {
         display: block; /* Postavite sliku da bude blok-element */
-        margin-left: 220px; /* Centriraj sliku horizontalno */
+        margin-left: 420px; /* Centriraj sliku horizontalno */
     }
 }
 
@@ -93,7 +94,7 @@ header {
 @media (max-width: 768px) {
     .logo img {
        width: 150px;
-       margin-top: 20px;
+       margin-top: -5px;
     }
 }
 
